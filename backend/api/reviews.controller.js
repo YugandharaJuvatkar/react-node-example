@@ -17,7 +17,6 @@ export default class ReviewsController {
         review,
         date
       );
-      res.json(ReviewResponse);
       res.json({ status: "success" });
     } catch (e) {
       res.status(500).json({ error: e.message });

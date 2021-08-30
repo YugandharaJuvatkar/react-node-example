@@ -24,12 +24,11 @@ export default class ReviewsDAO {
         text: review,
         restaurant_id: ObjectId(restaurantId),
       };
-      console.log(reviewDoc);
+
       return await reviews.insertOne(reviewDoc);
     } catch (e) {
       console.error(`Unable to post review: ${e}`);
       return { error: e };
-      process.exit(1);
     }
   }
 

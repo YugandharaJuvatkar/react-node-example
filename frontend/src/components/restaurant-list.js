@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import RestaurantDataService from "../sevices/restaurant";
 import { Link } from "react-router-dom";
 
-const RestaurantList = (props) => {
+const RestaurantsList = (props) => {
   const [restaurants, setRestaurants] = useState([]);
   const [searchName, setSearchName] = useState("");
   const [searchZip, setSearchZip] = useState("");
@@ -178,4 +178,4 @@ const RestaurantList = (props) => {
   );
 };
 
-export default RestaurantList;
+export default RestaurantsList;
